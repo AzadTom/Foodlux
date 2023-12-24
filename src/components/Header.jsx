@@ -9,18 +9,10 @@ const Header=()=>{
         <>
         <div className="flex justify-between p-4 items-center  bg-[var(--neutralblack)]">
             <div>
-                <img src="/LuxeNest.svg" alt="logo" />
+                <h1 className="font-bold text-2xl">GrabFood</h1>
             </div>
-           
-                <ul className="gap-4 hidden sm:flex sm:gap-8 text-sm font-extralight cursor-pointer">
-                    <li className="font-semibold" onClick={()=> navigate("/")}>Home</li>
-                    <li onClick={()=> navigate("/about")}>AboutUs</li>
-                    <li onClick={()=> navigate("/property")}>Properties</li>
-                    <li onClick={()=> navigate("/agents")}>Agents</li>
-                </ul>
-             
             <div>
-                <button className="border border-white px-4 py-2 ">Find A House</button>
+                <button className="border border-white px-4 py-2 ">Login</button>
             </div>
         </div>
         </>

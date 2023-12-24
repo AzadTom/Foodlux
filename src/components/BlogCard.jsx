@@ -1,14 +1,14 @@
 
 // eslint-disable-next-line react/prop-types
-const BlogCard=({id,img})=>{
+const BlogCard=({index,img})=>{
 
 
 
     return(
         <>
         <div className="flex justify-center items-center relative"> 
-            <img src={img} alt="blog" />
-            <h2 className="absolute text-8xl font-semibold">{id}</h2>
+        <img src={img} alt="blog"  className=" w-full h-[300px]   bg-center bg-cover object-cover"/>
+            <h2 className="absolute text-8xl font-semibold">{index+1}</h2>
         </div>
         </>
     )
