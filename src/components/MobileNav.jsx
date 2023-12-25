@@ -9,7 +9,7 @@ const MobileNav=()=>{
     return(
         <>
 
-        <section className="sm:hidden flex justify-between  items-baseline px-4 py-2 sticky bottom-0 bg-[var(--primarycolor)] border-t border-[var(--secondarytext)] cursor-pointer">
+        <section className="sm:hidden flex justify-between  items-baseline px-4 py-2 sticky bottom-0 bg-[var(--primarycolor)] border-t border-[var(--secondarytext)] cursor-pointer z-50">
             <div className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/")}>
                 <div className="w-[16px]">
                     <img src="/property.svg" alt="home" />

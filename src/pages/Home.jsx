@@ -4,6 +4,7 @@ import Cta from '../components/Cta';
 import Blogs from '../components/Blogs';
 import Faq from '../components/Faq';
 import Footer from '../components/Footer';
+import HeroSection from '../components/HeroSection';
 
 const Home = ()=>{
 
@@ -11,7 +12,7 @@ const Home = ()=>{
     return(
         <>
       
-       <Hero/>
+       <HeroSection/>
         <Products/>
         <Cta/>
         <Blogs/>
