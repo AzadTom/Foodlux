@@ -6,8 +6,8 @@ const BlogCard=({index,img})=>{
 
     return(
         <>
-        <div className="flex justify-center items-center relative"> 
-        <img src={img} alt="blog"  className=" w-full h-[300px]   bg-center bg-cover object-cover"/>
+        <div className="flex justify-center items-center relative rounded-2xl"> 
+        <img src={img} alt="blog"  className=" w-full h-[300px]   bg-center bg-cover object-cover  rounded-2xl"/>
             <h2 className="absolute text-8xl font-semibold z-10">{index+1}</h2>
         </div>
         </>

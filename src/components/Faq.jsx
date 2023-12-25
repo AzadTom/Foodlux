@@ -51,7 +51,7 @@ const Faq=()=>{
     return(
         <>
         <section className="flex justify-center items-center p-4 ">
-           <div className="flex flex-col justify-between items-center max-w-[1000px] w-full md:flex-row">
+           <div className="flex flex-col justify-between items-center max-w-[1000px] w-full md:flex-row gap-4">
            <div className="bg-[var(--neutralblack)] p-8 text-[var(--primarycolortext)] flex flex-col gap-8 ">
                 <h2 className="text-3xl">FAQS</h2>
                 <div className="text-3xl">
