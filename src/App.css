@@ -6,20 +6,52 @@
   border: 1px solid red;
 }
 
+@media (prefers-color-scheme: dark) {
+  
+  :root{
 
-:root{
-
-  --primarycolor:#212121;
-  --secondarycolor:#424242;
-
-  --primarytext:#F5F5F5;
-  --secondarytext:#A2A2A2;
-
-  --neutralblack:#000000;
-
-  --border:.6rem;
-
+    color-scheme: light dark;
+    --primarycolor:#212121;
+    --secondarycolor:#424242;
+  
+    --primarytext:#F5F5F5;
+    --secondarytext:#A2A2A2;
+  
+    --neutralblack:#000000;
+  
+   
+  
+  }
+ 
 }
+
+@media (prefers-color-scheme: light) {
+  
+  :root{
+
+   
+  
+    color-scheme: light dark;
+    --primarycolor:#212121;
+    --secondarycolor:#424242;
+  
+    --primarytext:#F5F5F5;
+    --secondarytext:#A2A2A2;
+  
+    --neutralblack:#000000;
+  
+  }
+ 
+}
+
+
+
+
+
+* ::-webkit-scrollbar {
+  display: none;
+}
+
 
 body {
   font-family: "Karla", sans-serif;
@@ -29,16 +61,11 @@ body {
   
 }
 
-* ::-webkit-scrollbar {
-  display: none;
-}
 
 
-.heroImg{
 
-  background-image: url(../assets/heroImg.png);
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-}
+
+
+
+
 

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const MobileNav=()=>{
 
@@ -19,10 +19,12 @@ const MobileNav=()=>{
 
             <div  className="flex flex-col gap-1 justify-center items-center  " onClick={()=> navigate("/property")}>
                 <div className="w-[16px]">
-                    <img src="/location.svg" alt="location"  />
+                    <LocalMallIcon  />
                 </div>
-                <h2 className="text-xs font-thin">Foods</h2>
+                <h2 className="text-xs font-thin">Cart</h2>
             </div>
+
+            
 
             <div  className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/agents")}>
                 <div className="w-[16px]">

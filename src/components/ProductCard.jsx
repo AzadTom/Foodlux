@@ -34,7 +34,7 @@ const ProductCard = ({id,name,img,category,price})=>{
                    
                 </div>
 
-                <button className="bg-[var(--primarycolor)] px-4 py-2 rounded-md">Add to cart</button>
+                <button className="bg-[var(--primarytext)]  text-[var(--neutralblack)] px-4 py-2 rounded-md font-medium">Add to cart</button>
 
             </div>
 
