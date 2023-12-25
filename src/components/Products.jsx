@@ -13,7 +13,7 @@ const Products = ()=>{
         },
         {
           id: 7,
-          name: "Idli/Sambhar",
+          name: "Idli-Sambhar",
           img: "https://vaya.in/recipes/wp-content/uploads/2018/02/Idli-and-Sambar-1.jpg",
           category: "food",
           price: 180,
@@ -103,8 +103,8 @@ const Products = ()=>{
             <h2 className="text-2xl font-semibold">Our Popular Food Items</h2>
             <h1 className="hidden sm:flex  items-center gap-4"><span>Explore All</span> <span><img src="/Line.svg" alt="arrow" /></span></h1>
         </div>
-        <section className="flex flex-col gap-4 justify-center items-center p-4">
-         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-4 justify-between   items-center max-w-[1000px]">
+        <section className="flex flex-col gap-4 justify-center items-center p-2">
+         <div className="grid grid-cols-2  md:grid-cols-3  gap-2 sm:gap-4 justify-between   items-center max-w-[1000px]">
          {products.map((item)=>(
 
             <ProductCard {...item} key={item.id}/>

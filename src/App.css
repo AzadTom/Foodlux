@@ -32,13 +32,13 @@
    
   
     color-scheme: light dark;
-    --primarycolor:#212121;
-    --secondarycolor:#424242;
+    --primarycolor:#EEEEEE;
+    --secondarycolor:#FEFEFE;
   
-    --primarytext:#F5F5F5;
-    --secondarytext:#A2A2A2;
+    --primarytext:#000000;
+    --secondarytext:#616161;
   
-    --neutralblack:#000000;
+    --neutralblack:#FFFFFF;
   
   }
  

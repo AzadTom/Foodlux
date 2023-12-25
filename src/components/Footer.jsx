@@ -1,4 +1,5 @@
 import "../App.css";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const Footer =()=>{
 
@@ -15,7 +16,7 @@ const Footer =()=>{
 
     return(
         <>
-        <footer className="bg-[var(--neutralblack)] text-white  py-4 px-4 grid  gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 overflow-hidden">
+        <footer className="bg-[var(--neutralblack)] text-[var(--primarytext)]  py-4 px-4 grid  gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 overflow-hidden">
             <div>
                 <h2>Our useful links</h2>
                 <ul className="text-[var(--secondarytext)] text-sm font-thin flex flex-col gap-4 " >
@@ -72,7 +73,7 @@ const Footer =()=>{
             </div>
         </footer>
         <div className="flex justify-center items-center w-full cursor-pointer bg-[var(--primarycolor)] py-4"  onClick={()=> goToTop()}>
-       <span className="text-2xl cursor-pointer "><img src="/downArrow.svg" alt="downArrow"/> </span>
+       <span className="text-2xl cursor-pointer rotate-[270deg]"><PlayArrowIcon/> </span>
         </div>
         </>
     )

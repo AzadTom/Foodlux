@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import LocalMallIcon from '@mui/icons-material/LocalMall';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import SearchIcon from '@mui/icons-material/Search';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const MobileNav=()=>{
 
@@ -12,7 +15,7 @@ const MobileNav=()=>{
         <section className="sm:hidden flex justify-between  items-baseline px-4 py-2 sticky bottom-0 bg-[var(--primarycolor)] border-t border-[var(--secondarycolor)] cursor-pointer z-50">
             <div className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/")}>
                 <div className="w-[16px]">
-                    <img src="/property.svg" alt="home" />
+                    <FastfoodIcon/>
                 </div>
                 <h2 className="text-xs font-thin">Home</h2>
             </div>
@@ -28,14 +31,14 @@ const MobileNav=()=>{
 
             <div  className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/agents")}>
                 <div className="w-[16px]">
-                    <img src="/searchw.svg" alt="budget" />
+                    <SearchIcon/>
                 </div>
                 <h2 className="text-xs font-thin">Search</h2>
             </div>
 
             <div  className="flex flex-col  gap-1 justify-center items-center" onClick={()=> navigate("/about")}>
                 <div className="w-[16px]">
-                    <img src="/about.svg" alt="about" />
+                    <AccountCircleIcon />
                 </div>
                 <h2 className="text-xs font-thin">Account</h2>
             </div>

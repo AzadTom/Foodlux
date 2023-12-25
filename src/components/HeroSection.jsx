@@ -20,7 +20,7 @@ const HeroSection = () => {
     return (
         <>
             <Header/>
-            <section className="flex  gap-4   p-4 sm:p-8  overflow-x-scroll">
+            <section className="flex  gap-4 p-8  overflow-x-scroll w-full">
             {images.map((item)=>{
 
                 return <SlideCard item={item}/>
