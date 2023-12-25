@@ -1,12 +1,12 @@
 
 
-const Agents=()=>{
+const Search=()=>{
 
 
     return(
         <>
         <div className="w-full h-screen">
-        <h2>Agents</h2>
+        <h2>Search</h2>
 
         </div>
         </>
@@ -14,4 +14,4 @@ const Agents=()=>{
 
 }
 
-export default Agents;
+export default Search;

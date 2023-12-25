@@ -15,64 +15,64 @@ const Footer =()=>{
 
     return(
         <>
-        <footer className="bg-black text-white my-4 py-4 px-4 grid  gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 overflow-hidden">
+        <footer className="bg-[var(--neutralblack)] text-white my-4 py-4 px-4 grid  gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 overflow-hidden">
             <div>
                 <h2>Our useful links</h2>
                 <ul className="text-[var(--secondarytext)] text-sm font-thin flex flex-col gap-4 " >
-                    <li>PropTechVision</li>
-                    <li>EstateExplorer</li>
-                    <li>RealtyPulse</li>
-                    <li>UrbanShowcase</li>
-                    <li>SkylineSampler</li>
-                    <li>HomeHarbor</li>
+                    <li>Quick Links</li>
+                    <li>Helpful Resources</li>
+                    <li>Explore More</li>
+                    <li>Essential Links</li>
+                    <li>Go-To Guides</li>
+                    <li>Beyond the Menu</li>
                 </ul>
             </div>
             <div>
                 <h2>Socials</h2>
                 <ul className="text-[var(--secondarytext)] text-sm font-thin flex flex-col gap-4 ">
-                    <li>ConnectSphere</li>
-                    <li>SocialHarbor</li>
-                    <li>UnityHub</li>
-                    <li>ShareVista</li>
+                    <li>Social Bites</li>
+                    <li>Foodie Friends</li>
+                    <li>Delicious Connections</li>
+                    <li>Facebook Flavor</li>
                 </ul>
             </div>
 
             <div>
                 <h2>Collabrators</h2>
                 <ul className="text-[var(--secondarytext)] text-sm font-thin flex flex-col gap-4 ">
-                    <li>TeamHarbor</li>
+                    <li>Collaboration Corner</li>
                     <li>CollaboraLink</li>
-                    <li>SyncWave</li>
-                    <li>CoCreateHub</li>
-                    <li>CollaborateSync</li>
-                    <li>UnityNexus</li>
-                    <li>ConnectCollab</li>
+                    <li>Partners in Flavor</li>
+                    <li>CUnity in Cuisine</li>
+                    <li>Harmony in Hospitality</li>
+                    <li>Blend & Bond Network</li>
+                    <li>Savor Collaborators</li>
                 </ul>
             </div>
 
             <div>
-                <h2>Properties</h2>
+                <h2>Foods category</h2>
                 <ul className="text-[var(--secondarytext)] text-sm font-thin flex flex-col gap-4 ">
-                    <li>RuralRetreatSampler</li>
-                    <li>SkyHighResidencesDemo</li>
-                    <li>MountainViewSampler</li>
-                    <li>CoastalRetreatsHub</li>
-                    <li>UrbanLoftsDemo</li>
+                    <li>Savory Staples</li>
+                    <li>Healthy Noshes</li>
+                    <li>Comfort Classics</li>
+                    <li>Fresh & Fit</li>
+                    <li>Mouthwatering Meats</li>
                 </ul>
             </div>
 
             <div>
-                <h2>AboutUs</h2>
+                <h2>ContactUs</h2>
                 <ul className="text-[var(--secondarytext)] text-sm font-thin flex flex-col gap-4 ">
-                    <li>UrbanVistaOrigins</li>
-                    <li>PrimePropertiesPioneers</li>
-                    <li>HarmonyHomesStory</li>
-                    <li>VisionaryEstates</li>
+                    <li>Reach Out & Taste</li>
+                    <li>Flavorful Feedback</li>
+                    <li>Get in Touch with Tastes</li>
+                    <li>Flavor Inquiries</li>
                 </ul>
             </div>
         </footer>
-        <div className="flex justify-center items-center w-full ">
-       <span className="text-2xl cursor-pointer mb-4" onClick={()=> goToTop()}><img src="/downArrow.svg" alt="downArrow"/> </span>
+        <div className="flex justify-center items-center w-full cursor-pointer"  onClick={()=> goToTop()}>
+       <span className="text-2xl cursor-pointer mb-4"><img src="/downArrow.svg" alt="downArrow"/> </span>
         </div>
         </>
     )

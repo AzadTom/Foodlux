@@ -8,7 +8,8 @@ const BlogCard=({index,img})=>{
         <>
         <div className="flex justify-center items-center relative"> 
         <img src={img} alt="blog"  className=" w-full h-[300px]   bg-center bg-cover object-cover"/>
-            <h2 className="absolute text-8xl font-semibold">{index+1}</h2>
+            <h2 className="absolute text-8xl font-semibold z-10">{index+1}</h2>
+            <div className="h-full bg-[linear-gradient(180deg,var(--secondarycolor),transparent,var(--primarycolor))] absolute w-full left-0 right-0"></div>
         </div>
         </>
     )

@@ -1,4 +1,4 @@
-import Search from '../components/Search';
+import Hero from '../components/Hero';
 import Products from '../components/Products';
 import Cta from '../components/Cta';
 import Blogs from '../components/Blogs';
@@ -11,7 +11,7 @@ const Home = ()=>{
     return(
         <>
       
-       <Search/>
+       <Hero/>
         <Products/>
         <Cta/>
         <Blogs/>

@@ -1,16 +1,16 @@
 
 
-const Property=()=>{
+const Food=()=>{
 
 
     return(
         <>
         <div className="w-full h-screen">
-        <h2>Property</h2>
+        <h2>Food</h2>
         </div>
         </>
     )
 
 }
 
-export default Property;
+export default Food;

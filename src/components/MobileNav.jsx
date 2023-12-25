@@ -21,21 +21,21 @@ const MobileNav=()=>{
                 <div className="w-[16px]">
                     <img src="/location.svg" alt="location"  />
                 </div>
-                <h2 className="text-xs font-thin">Property</h2>
+                <h2 className="text-xs font-thin">Foods</h2>
             </div>
 
             <div  className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/agents")}>
                 <div className="w-[16px]">
-                    <img src="/budget.svg" alt="budget" />
+                    <img src="/searchw.svg" alt="budget" />
                 </div>
-                <h2 className="text-xs font-thin">Agents</h2>
+                <h2 className="text-xs font-thin">Search</h2>
             </div>
 
             <div  className="flex flex-col  gap-1 justify-center items-center" onClick={()=> navigate("/about")}>
                 <div className="w-[16px]">
                     <img src="/about.svg" alt="about" />
                 </div>
-                <h2 className="text-xs font-thin">About</h2>
+                <h2 className="text-xs font-thin">Account</h2>
             </div>
         </section>
 

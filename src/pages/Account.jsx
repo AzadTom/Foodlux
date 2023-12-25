@@ -1,12 +1,12 @@
 
 
-const About=()=>{
+const Account=()=>{
 
 
     return(
         <>
         <div className="w-full h-screen">
-        <h2>About</h2>
+        <h2>Account</h2>
         </div>
        
         </>
@@ -14,4 +14,4 @@ const About=()=>{
 
 }
 
-export default About;
+export default Account;

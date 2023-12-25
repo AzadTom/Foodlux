@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
-import Property from './pages/Property';
-import Agents from './pages/Agents';
-import About from './pages/About';
+import Food from './pages/Food';
+import Search from './pages/Search';
+import Account from './pages/Account';
 import { Routes,Route } from "react-router-dom";
 import Loading from "./components/Loading";
 import { Suspense} from "react";
@@ -15,9 +15,9 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Suspense fallback={<Loading/>}><Home/></Suspense>}/>
-      <Route path="/property" element={<Suspense fallback={<Loading/>}><Property/></Suspense>}/>
-      <Route path="/agents" element={<Suspense fallback={<Loading/>}><Agents/></Suspense>}/>
-      <Route path="/about" element={<Suspense fallback={<Loading/>}><About/></Suspense>}/>
+      <Route path="/food" element={<Suspense fallback={<Loading/>}><Food/></Suspense>}/>
+      <Route path="/search" element={<Suspense fallback={<Loading/>}><Search/></Suspense>}/>
+      <Route path="/account" element={<Suspense fallback={<Loading/>}><Account/></Suspense>}/>
     </Routes>
     <MobileNav/>
     </>
