@@ -6,6 +6,7 @@ import Faq from '../components/Faq';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
 import MobileNav from '../components/MobileNav';
+import VideoCta from '../components/VideoCta';
 
 const Home = ()=>{
 
@@ -16,17 +17,19 @@ const Home = ()=>{
     return(
        
       
-       <section className='relative'>
+       <>
+        <VideoCta/>
        <HeroSection/>
         <Products/>
         <Cta/>
         <Blogs/>
         <Faq/>
+        <Cta/>
         <Footer/>
         <MobileNav/>
 
        
-       </section>
+       </>
       
       
         
