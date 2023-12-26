@@ -1,7 +1,9 @@
 
 import StarIcon from '@mui/icons-material/Star';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
-const SlideCard = ({ item ,curr}) => {
+const SlideCard = ({ item ,curr ,prev,next}) => {
 
 
     return (
@@ -21,7 +23,23 @@ const SlideCard = ({ item ,curr}) => {
                         cumque sunt ab veniam ipsa, itaque beatae dolorum.</p>
                 </div>
 
-                <div className='absolute bottom-6 right-8'>{`${curr+1}/4`}</div>
+                <div className='absolute bottom-6 right-8 flex gap-4 items-center' >
+                    <div className='flex gap-2 items-center'>
+                        <div onClick={prev} className='cursor-pointer'>
+                        <ArrowCircleLeftIcon/>
+                        </div>
+                     
+                     <div onClick={next} className='cursor-pointer'>
+                     <ArrowCircleRightIcon/>
+                     </div>
+                      
+                    </div>
+
+                    <div>
+                    {`${curr+1}/4`}
+                    </div>
+                </div>
+                
 
             </div>
         </section>
