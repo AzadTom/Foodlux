@@ -1,12 +1,12 @@
 
 import StarIcon from '@mui/icons-material/Star';
 
-const SlideCard = ({ item }) => {
+const SlideCard = ({ item ,curr}) => {
 
 
     return (
-        <section className='flex-none w-full flex justify-center items-center '>
-            <div className='max-w-[1200px] w-full flex-col sm:flex-row flex justify-center items-center bg-[var(--neutralblack)] border border-[var(--secondarycolor)] rounded-3xl sm:p-8'>
+        <section className='flex-none w-full flex justify-center items-center transition-transform ease-out duration-200 ' style={{transform:`translateX(-${curr*100}%)`}}>
+            <div className='max-w-[1200px] w-full flex-col sm:flex-row flex justify-center items-center bg-[var(--neutralblack)] border border-[var(--secondarycolor)] rounded-3xl sm:p-8 relative'>
 
                 <div className="w-full flex-1 ">
                     <img src={item} alt="heroImg" className='w-full h-[320px] rounded-t-3xl sm:rounded-3xl  bg-cover bg-center object-cover' />
@@ -20,6 +20,8 @@ const SlideCard = ({ item }) => {
                         Nostrum, eligendi consectetur nobis, sequi voluptates repellat sed at odio
                         cumque sunt ab veniam ipsa, itaque beatae dolorum.</p>
                 </div>
+
+                <div className='absolute bottom-6 right-8'>{`${curr+1}/4`}</div>
 
             </div>
         </section>

@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from 'react';
 import Header from './Header';
 import SlideCard from './SlideCard';
 
@@ -16,6 +17,22 @@ const HeroSection = () => {
     ];
 
 
+     const[curr,setCurr] = useState(0);
+
+     const prev =()=> setCurr((curr)=> (curr===0?images.length-1:curr-1));
+
+     const next=()=> setCurr((curr)=> (curr===images.length-1?0:curr+1));
+
+
+      useEffect(()=>{
+
+        const slideInterval =setInterval(next,3000);
+
+        return ()=> clearInterval(slideInterval);
+
+      },[])
+
+
 
     return (
         <>
@@ -23,7 +40,7 @@ const HeroSection = () => {
             <section className="flex  gap-4 p-8  overflow-x-scroll w-full">
             {images.map((item)=>{
 
-                return <SlideCard item={item}/>
+                return <SlideCard item={item} curr={curr}/>
             })
 
             }
