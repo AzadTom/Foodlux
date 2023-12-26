@@ -23,7 +23,7 @@ const Header=()=>{
                  <button className="flex gap-1 items-center">
                     <LocalMallIcon/>
                    </button>
-                <button><AccountCircleIcon/></button>
+                <button onClick={()=> navigate("/signup")}><AccountCircleIcon/></button>
             </div>
         </div>
         </>

@@ -12,6 +12,26 @@
     }
 
 
+    input:invalid[focused="true"]  + .custom-rule {
+        display: block;
+     
+      }
+    
+      input:invalid[focused="true"] {
+    
+        border: 2px solid red;
+        color: red;
+        
+      }
+    
+    
+    
+      input:valid{
+    
+        border: 0.12rem solid green;
+      }
+
+
     
 
 }

@@ -11,9 +11,9 @@ const ProductCard = ({id,name,img,category,price})=>{
          <div className="border border-[var(--secondarycolor)] rounded-2xl">
             
            
-            <img src={img} alt="demo"  id={id} className=" w-full h-[300px]   bg-center bg-cover object-cover sm:rounded-t-2xl rounded-t-lg"/>
+            <img src={img} alt="demo"  id={id} className=" w-full h-[300px]   bg-center bg-cover object-cover "/>
            
-            <div className=" px-2 sm:px-4 py-4 sm:py-8 bg-[var(--neutralblack)] flex flex-col  gap-4 sm:rounded-b-2xl  rounded-b-lg">
+            <div className=" px-2 sm:px-4 py-4 sm:py-8 bg-[var(--neutralblack)] flex flex-col  gap-4   ">
 
                 <div className="flex  justify-around  sm:justify-between items-center  ">
                     {/* title */}

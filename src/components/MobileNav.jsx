@@ -2,12 +2,16 @@ import { useNavigate } from "react-router-dom";
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import SearchIcon from '@mui/icons-material/Search';
+import { withRouter } from "./withRouter";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 
 const MobileNav=()=>{
 
 
      const navigate = useNavigate();
+
+
 
     return(
         <>
@@ -20,7 +24,7 @@ const MobileNav=()=>{
                 <h2 className="text-xs font-thin">Home</h2>
             </div>
 
-            <div  className="flex flex-col gap-1 justify-center items-center  " onClick={()=> navigate("/property")}>
+            <div  className="flex flex-col gap-1 justify-center items-center  " onClick={()=> navigate("/cart")}>
                 <div className="w-[16px]">
                     <LocalMallIcon  />
                 </div>
@@ -29,14 +33,14 @@ const MobileNav=()=>{
 
             
 
-            <div  className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/agents")}>
+            <div  className="flex flex-col gap-1 justify-center items-center" onClick={()=> navigate("/search")}>
                 <div className="w-[16px]">
                     <SearchIcon/>
                 </div>
                 <h2 className="text-xs font-thin">Search</h2>
             </div>
 
-            <div  className="flex flex-col  gap-1 justify-center items-center" onClick={()=> navigate("/about")}>
+            <div  className="flex flex-col  gap-1 justify-center items-center" onClick={()=> navigate("/account")}>
                 <div className="w-[16px]">
                     <AccountCircleIcon />
                 </div>
@@ -50,4 +54,5 @@ const MobileNav=()=>{
 }
 
 
-export default MobileNav;
+export default withRouter(MobileNav);
+

@@ -4,14 +4,14 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 const SlideCard = ({ item ,curr ,prev,next}) => {
-
+    // max-w-[1200px]
 
     return (
         <section className='flex-none w-full flex justify-center items-center transition-transform ease-out duration-200 ' style={{transform:`translateX(-${curr*100}%)`}}>
-            <div className='max-w-[1200px] w-full flex-col sm:flex-row flex justify-center items-center bg-[var(--neutralblack)] border border-[var(--secondarycolor)] rounded-3xl sm:p-8 relative'>
+            <div className=' w-full flex-col sm:flex-row flex justify-center items-center bg-[var(--neutralblack)] border border-[var(--secondarycolor)]  relative'>
 
                 <div className="w-full flex-1 ">
-                    <img src={item} alt="heroImg" className='w-full h-[320px] rounded-t-3xl sm:rounded-3xl  bg-cover bg-center object-cover' />
+                    <img src={item} alt="heroImg" className='w-full h-[320px]   bg-cover bg-center object-cover' />
                 </div>
                 <div className="flex-1 flex flex-col gap-2 p-4 justify-center items-start">
                     <h3 className="text-xl font-semibold">FoodLux</h3>
@@ -23,7 +23,7 @@ const SlideCard = ({ item ,curr ,prev,next}) => {
                         cumque sunt ab veniam ipsa, itaque beatae dolorum.</p>
                 </div>
 
-                <div className='absolute bottom-6 right-8 flex gap-4 items-center' >
+                <div className='absolute bottom-6 right-8 flex gap-4 items-center bg-green-600 px-4 py-2' >
                     <div className='flex gap-2 items-center'>
                         <div onClick={prev} className='cursor-pointer'>
                         <ArrowCircleLeftIcon/>
