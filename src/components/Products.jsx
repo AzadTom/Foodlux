@@ -100,7 +100,7 @@ const Products = ()=>{
 
     return(
         <>
-        <div className="flex  justify-between   mx-8 my-8">
+        <div className="flex  justify-between   mx-4 my-8">
             <h2 className="text-2xl font-semibold">Our Popular Food Items</h2>
             <h1 className="hidden sm:flex  items-center gap-4"><span>Explore All</span><ArrowForwardIcon/></h1>
         </div>

@@ -2,7 +2,7 @@ import FastfoodIcon from '@mui/icons-material/Fastfood';
 import SellIcon from '@mui/icons-material/Sell';
 import StarIcon from '@mui/icons-material/Star';
 
-// eslint-disable-next-line react/prop-types
+
 const ProductCard = ({id,name,img,category,price})=>{
 
 
@@ -11,7 +11,7 @@ const ProductCard = ({id,name,img,category,price})=>{
          <div className="border border-[var(--secondarycolor)] rounded-2xl">
             
            
-            <img src={img} alt="demo"  id={id} className=" w-full h-[300px]   bg-center bg-cover object-cover rounded-t-2xl"/>
+            <img src={img} alt="demo"  id={id} className=" w-full h-[300px]   bg-center bg-cover object-cover rounded-t-2xl" loading='lazy'/>
            
             <div className=" px-2 sm:px-4 py-4 sm:py-8  flex flex-col  gap-4   ">
 
@@ -39,7 +39,7 @@ const ProductCard = ({id,name,img,category,price})=>{
                    
                 </div>
 
-                <button className="bg-[var(--primarytext)]  text-[var(--neutral)] px-4 py-2 rounded-md font-medium text-xs w-full sm:text-sm">Add to cart</button>
+                <button className="bg-[var(--primarytext)]  text-[var(--neutral)] px-4 py-2 rounded-md font-medium  w-full text-sm">Add to cart</button>
 
             </div>
 

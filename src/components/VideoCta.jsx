@@ -22,7 +22,7 @@ const VideoCta=()=>{
     return(
         <>
         <div className="relative mx-4  ">
-        <video src={videos[0].video} autoPlay loop muted  className="w-full h-[50vh]  sm:h-[80vh] object-cover rounded-2xl"></video>
+        <video src={videos[0].video} autoPlay loop muted  className="w-full h-[50vh]  sm:h-[80vh] object-cover rounded-2xl border border-[var(--secondarycolor)]"></video>
         <div className="absolute flex flex-col justify-center items-center top-0 left-0 right-0 bottom-0 text-white">
             <h2 className="sm:text-8xl font-bold text-5xl">FoodLux</h2>
             <h3 className="sm:text-xl font-medium text-sm">Welcome to Our near Outlets!</h3>

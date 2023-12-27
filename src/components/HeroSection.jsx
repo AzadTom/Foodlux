@@ -37,7 +37,7 @@ const HeroSection = () => {
     return (
         <>
             <h2 className='text-2xl font-semibold my-8 mx-4 flex flex-col gap-2 justify-center items-center'><span>Popular Food Item</span> <span className='text-xs font-thin bg-green-600 px-2 py-1'>Today</span></h2>
-            <section className="flex   overflow-x-scroll w-full sm:p-8 sm:gap-4  mx-2 sm:mx-0">
+            <section className="flex   overflow-x-scroll w-full sm:p-8 sm:gap-4  sm:mx-0">
             {images.map((item)=>{
 
                 return <SlideCard item={item} curr={curr} prev={()=> prev()} next={()=> next()}/>
