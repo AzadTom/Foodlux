@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +17,7 @@
     --primarytext:#F5F5F5;
     --secondarytext:#A2A2A2;
   
-    --neutralblack:#000000;
+    --neutral:#000000;
   
    
   
@@ -31,14 +31,13 @@
 .light { 
 
   
-    --primarycolor:#FFFFFF;
-    --secondarycolor:#FEFEFE;
-  
-    --primarytext:#000000;
-    --secondarytext:#616161;
-  
-    --neutralblack:#F5F5F5;
-  
+  --primarycolor:#FFFFFF;
+  --secondarycolor:#EEEEEE;
+
+  --primarytext:#000000;
+  --secondarytext:#212121;
+
+  --neutral:#FFFFFF;
   
 }
 
@@ -48,18 +47,22 @@
 
    
   
-    color-scheme: light dark;
-    --primarycolor:#FFFFFF;
-    --secondarycolor:#FEFEFE;
-  
-    --primarytext:#000000;
-    --secondarytext:#616161;
-  
-    --neutralblack:#F5F5F5;
-  
-  }
+     
+  --primarycolor:#FFFFFF;
+  --secondarycolor:#EEEEEE;
+
+  --primarytext:#000000;
+  --secondarytext:#212121;
+
+  --neutral:#FFFFFF;
+
+}
  
 }
+
+
+
+
 
 
 

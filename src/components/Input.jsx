@@ -23,7 +23,7 @@ function Input({value,onchange,name,label,type,required ,extra,align,error ,patt
                    <label htmlFor="username" className='text-sm'>
                      {label}<span className='text-[var(--secondarytext)]'>{`${extra}`}</span>
                    </label>
-                   <input type={type}  className='border border-[#7676767] rounded block w-full px-[15px] py-[10px] outline-none bg-[var(--secondarycolor)]'  name={name} value={value} onChange={onchange} required={required} pattern={pattern}   onBlur={handleFocus} focused={focused.toString()}  onFocus={handleInput}/>
+                   <input type={type}  className='border border-[#7676767] rounded block w-full px-[15px] py-[10px] outline-none bg-[var(--primarycolor)]'  name={name} value={value} onChange={onchange} required={required} pattern={pattern}   onBlur={handleFocus} focused={focused.toString()}  onFocus={handleInput}/>
                    <span className='text-red-600 hidden custom-rule'>{error}</span>
                </div>
  ) 

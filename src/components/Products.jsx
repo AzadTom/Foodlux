@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Products = ()=>{
 
@@ -101,10 +102,10 @@ const Products = ()=>{
         <>
         <div className="flex  justify-between   mx-8 my-8">
             <h2 className="text-2xl font-semibold">Our Popular Food Items</h2>
-            <h1 className="hidden sm:flex  items-center gap-4"><span>Explore All</span> <span><img src="/Line.svg" alt="arrow" /></span></h1>
+            <h1 className="hidden sm:flex  items-center gap-4"><span>Explore All</span><ArrowForwardIcon/></h1>
         </div>
         <section className="flex flex-col gap-4 justify-center items-center p-2">
-         <div className="grid grid-cols-2  md:grid-cols-3  gap-2 sm:gap-4 justify-between   items-center max-w-[1000px]">
+         <div className="grid grid-cols-1   sm:grid-cols-2  md:grid-cols-3  gap-2 sm:gap-4 justify-between   items-center max-w-[1000px]">
          {products.map((item)=>(
 
             <ProductCard {...item} key={item.id}/>

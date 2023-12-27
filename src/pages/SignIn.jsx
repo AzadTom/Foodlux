@@ -64,7 +64,7 @@ function SignIn() {
     <div className='flex    items-center justify-center   w-full h-screen  '>
 
             
-         <form className='max-w-[800px]  flex flex-col justify-center    p-[2rem] gap-4 rounded-md bg-[var(--secondarycolor)]'>
+         <form className='max-w-[800px]  flex flex-col justify-center    p-[2rem] gap-4 rounded-md '>
 
                 <h1 className='text-3xl   font-semibold'>FoodLux</h1> 
                 <h2 className='text-xl  '>LogIn </h2>

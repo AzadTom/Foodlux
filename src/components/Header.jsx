@@ -12,8 +12,8 @@ const Header=()=>{
 
     return(
         <>
-        <div className="flex justify-between p-4 items-center">
-            <div>
+        <div className="flex justify-between p-4 items-center cursor-pointer">
+            <div onClick={()=> navigate("/")}>
                 <h1 className="font-bold text-2xl">FoodLux</h1>
             </div>
             <div className="flex  gap-4">
@@ -23,7 +23,7 @@ const Header=()=>{
                  <button className="flex gap-1 items-center">
                     <LocalMallIcon/>
                    </button>
-                <button onClick={()=> navigate("/signup")}><AccountCircleIcon/></button>
+                <button onClick={()=> navigate("/signin")}><AccountCircleIcon/></button>
             </div>
         </div>
         </>
