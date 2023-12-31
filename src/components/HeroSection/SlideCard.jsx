@@ -4,7 +4,7 @@ import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 const SlideCard = ({ item ,curr ,prev,next}) => {
-    // max-w-[1200px]
+   
 
     return (
         <section className='flex-none w-full flex justify-center items-center transition-transform ease-out duration-200 ' style={{transform:`translateX(-${curr*100}%)`}}>

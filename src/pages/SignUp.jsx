@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Input from '../components/Input';
+import Input from '../components/Others/Input';
 
 
 function SignUp() {
@@ -101,7 +101,7 @@ function SignUp() {
             
          <form className='max-w-[800px]  flex flex-col justify-center    p-[2rem] gap-4 rounded-md '>
 
-                <h1 className='text-3xl   font-semibold'>FoodLux</h1> 
+               
                 <h2 className='text-xl  '>Let's create an account </h2>
 
               <div className='flex  gap-4  '>

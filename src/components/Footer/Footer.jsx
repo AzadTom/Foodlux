@@ -1,4 +1,3 @@
-import "../App.css";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const Footer =()=>{

@@ -1,10 +1,9 @@
-import Products from '../components/Products';
-import Cta from '../components/Cta';
-import Blogs from '../components/Blogs';
-import Faq from '../components/Faq';
-import Footer from '../components/Footer';
-import HeroSection from '../components/HeroSection';
-import VideoCta from '../components/VideoCta';
+import Products from '../components/Products/Products';
+import Cta from '../components/Cta/Cta';
+import Blogs from '../components/Blogs/Blogs';
+import Faq from '../components/Faq/Faq';
+import Footer from '../components/Footer/Footer';
+import HeroSection from '../components/HeroSection/HeroSection';
 
 const Home = ()=>{
 
@@ -13,10 +12,7 @@ const Home = ()=>{
 
       
     return(
-       
-      
        <>
-        <VideoCta/>
        <HeroSection/>
         <Products/>
         <Cta/>
@@ -24,14 +20,8 @@ const Home = ()=>{
         <Faq/>
         <Cta/>
         <Footer/>
-       
-
-       
        </>
-      
-      
-        
-    )
+      )
 
 
 }
