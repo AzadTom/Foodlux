@@ -18,6 +18,8 @@
     --secondarytext:#A2A2A2;
   
     --neutral:#000000;
+
+    --border :#FFFFFF;
   
    
   
@@ -30,7 +32,7 @@
 
 .light { 
 
-  
+  color-scheme: light dark;
   --primarycolor:#FFFFFF;
   --secondarycolor:#EEEEEE;
 
@@ -38,6 +40,8 @@
   --secondarytext:#212121;
 
   --neutral:#FFFFFF;
+
+   --border :#000000;
   
 }
 
@@ -55,6 +59,8 @@
   --secondarytext:#212121;
 
   --neutral:#FFFFFF;
+
+  --border :#000000;
 
 }
  

@@ -1,32 +1,24 @@
-import Home from "./pages/Home";
+import { Suspense ,lazy} from "react";
 import { Routes,Route } from "react-router-dom";
-import Loading from "./components/Others/Loading";
-import { Suspense} from "react";
-import SignUp from './pages/SignUp';
-import SignIn from './pages/SignIn';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { useState } from 'react';
-import Header from "./components/Header/Header";
 
+// other components
+import Header from "./components/Header/Header";
+import Loading from "./components/Others/Loading";
+import ThemeButton from './components/HeroSection/ThemeButton';
+
+
+
+// pages components
+const Home  = lazy(()=> import("./pages/Home"));
+const SignUp = lazy(()=> import("./pages/SignUp"));
+const SignIn = lazy(()=> import("./pages/SignIn"));
+const Cart  = lazy(()=> import("./pages/CartPage"));
 
 
 
 function App() {
 
-  const[mode,setMode] = useState(true);
-
-  const changeMode =(e)=>{
-
-    e.preventDefault();
-
-    const theme = document.querySelector("body");
-
-     theme.classList.toggle("light");
-
-     setMode(prev=>!prev); 
-
-  }
+  
 
   return (
     <>
@@ -35,10 +27,9 @@ function App() {
       <Route path="/" element={<Suspense fallback={<Loading/>}><Home/></Suspense>} />
       <Route path="/signup" element={<Suspense fallback={<Loading/>}><SignUp/></Suspense>}/>
       <Route path="/signin" element={<Suspense fallback={<Loading/>}><SignIn/></Suspense>}/>
+      <Route path="/cart" element={<Suspense fallback={<Loading/>}><Cart/></Suspense>}/>
     </Routes>
-    <span className='hidden  fixed  m-4 right-0 bottom-4 bg-[var(--neutralblack)] sm:flex flex-col justify-center items-center px-4 py-2 w-12 h-12 rounded-[50%]  cursor-pointer border border-[var(--primarycolor)]' id='mode' onClick={(e)=>changeMode(e)}>
-        {mode?(<LightModeIcon/>):(<DarkModeIcon/>)}
-        </span>
+    <ThemeButton/>
     </>
   );
 }
