@@ -13,6 +13,7 @@ const Home  = lazy(()=> import("./pages/Home"));
 const SignUp = lazy(()=> import("./pages/SignUp"));
 const SignIn = lazy(()=> import("./pages/SignIn"));
 const Cart  = lazy(()=> import("./pages/CartPage"));
+const SearchPage = lazy(()=>import("./pages/SearchPage"));
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/signup" element={<Suspense fallback={<Loading/>}><SignUp/></Suspense>}/>
       <Route path="/signin" element={<Suspense fallback={<Loading/>}><SignIn/></Suspense>}/>
       <Route path="/cart" element={<Suspense fallback={<Loading/>}><Cart/></Suspense>}/>
+      <Route path="/search" element={<Suspense fallback={<Loading/>}><SearchPage/></Suspense>}/>
     </Routes>
     <ThemeButton/>
     </>
