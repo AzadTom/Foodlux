@@ -5,6 +5,7 @@ import {useDispatch ,useSelector} from 'react-redux';
 import  {getProducts ,setStatus} from '../../reducers/productSlice.js';
 import  {addtocart}from '../../reducers/cartSlice.js';
 import { useEffect } from "react";
+import {addToFav,removeToFav} from '../../reducers/favSlice.js'
 
 const Products = ()=>{
 
@@ -15,6 +16,9 @@ const Products = ()=>{
 
       const {products,status} = useSelector((state)=>(state.product));
 
+      const {wishData} = useSelector((state)=>(state.favData));
+
+
 
 
 
@@ -23,6 +27,25 @@ const Products = ()=>{
         dispatch(addtocart(item));
 
       }
+
+     const addRemoveToFav = (product)=>{
+
+
+        const isFound =  wishData.find((item)=>(item.id == product.id));
+
+        if(isFound)
+        {
+           dispatch(removeToFav(product));
+        }
+        else
+        {
+
+           dispatch(addToFav(product));
+        }
+
+
+
+     }
 
       useEffect(()=>{
 
@@ -47,7 +70,7 @@ const Products = ()=>{
         </div>
         <section className="flex flex-col gap-4 justify-center items-center p-2">
          <div className="grid grid-cols-1   sm:grid-cols-2  md:grid-cols-3  gap-2 sm:gap-4 justify-between   items-center max-w-[1000px]">
-         {products.map((item)=>(<ProductCard {...item} key={item.id} add={()=>add(item)}/>))}
+         {products.map((item)=>(<ProductCard {...item} key={item.id} add={()=>add(item)} addRemoveToFav={()=> addRemoveToFav(item)}/>))}
          </div>
 
         </section>

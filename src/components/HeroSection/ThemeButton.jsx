@@ -1,28 +1,26 @@
-import { useState } from "react";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { useTheme } from "../../utils/ThemeProvider";
 
 const ThemeButton =()=>{
 
 
-    const[mode,setMode] = useState(true);
+   
 
-    const changeMode =(e)=>{
+    const {theme,toggletheme}= useTheme();
 
-    e.preventDefault();
 
-    const theme = document.querySelector("body");
+    const changeMode =()=>{
 
-     theme.classList.toggle("light");
+   
+        toggletheme();
 
-     setMode(prev=>!prev); 
-
-  }
+    }
 
     return(
         <>
-         <span className='hidden  fixed  m-4 right-0 bottom-4 bg-[var(--neutralblack)] sm:flex flex-col justify-center items-center px-4 py-2 w-12 h-12 rounded-[50%]  cursor-pointer border border-[var(--primarycolor)]' id='mode' onClick={(e)=>changeMode(e)}>
-        {mode?(<LightModeIcon/>):(<DarkModeIcon/>)}
+         <span className='hidden  fixed  m-4 right-0 bottom-4 bg-[var(--neutral)] sm:flex flex-col justify-center items-center px-4 py-2 w-12 h-12 rounded-[50%]  cursor-pointer border border-[var(--primarycolor)]' id='mode' onClick={changeMode}>
+        {theme?(<LightModeIcon/>):(<DarkModeIcon/>)}
         </span>
         </>
     )
