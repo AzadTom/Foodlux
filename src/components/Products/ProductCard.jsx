@@ -3,9 +3,10 @@ import SellIcon from '@mui/icons-material/Sell';
 import StarIcon from '@mui/icons-material/Star';
 import {useSelector} from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { Favorite } from '@mui/icons-material';
 
 
-const ProductCard = ({id,name,img,category,price,add})=>{
+const ProductCard = ({id,name,img,category,price,add,addRemoveToFav})=>{
 
 
     
@@ -13,15 +14,31 @@ const ProductCard = ({id,name,img,category,price,add})=>{
      
      const {cart} = useSelector((state)=>(state.cart));
 
+     const {wishData} = useSelector((state)=>(state.favData));
+
+
 
 
      const isMatch = cart && cart.find((item)=> (item.id === id));
 
+     const isFavMatch = wishData && wishData.find((item)=> (item.id === id));
+
+
+
+     
 
 
     return(
         <>
-         <div className="border border-[var(--secondarycolor)] rounded-2xl shadow-md hover:shadow-lg ">
+         <div className="border border-[var(--secondarycolor)] rounded-2xl shadow-md hover:shadow-lg relative">
+            
+            {/* wish */}
+            <div className='absolute top-4 right-4 bg-[var(--primarycolor)] p-4 rounded-full cursor-pointer' onClick={addRemoveToFav}>
+              
+                <span className={isFavMatch?"text-red-600":""}> 
+                  <Favorite/>
+                </span>
+            </div>
             
            
             <img src={img} alt="demo"  id={id} className=" w-full h-[300px]   bg-center bg-cover object-cover rounded-t-2xl " loading='lazy'/>

@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useSelector ,useDispatch} from "react-redux";
 import {getFilter} from '../../reducers/filterSlice.js';
 import { useState } from "react";
+import { Favorite } from "@mui/icons-material";
 
 
 
@@ -16,10 +17,12 @@ const Header=()=>{
 
     const {cart} = useSelector((state)=>(state.cart));
 
+    const {wishData} = useSelector((state)=>(state.favData));
+
     const {products} = useSelector((state)=>(state.product));
 
 
-    const [query,setQuery]= useState("");
+    
     
 
 
@@ -54,6 +57,10 @@ const Header=()=>{
                  <div className="hidden sm:flex gap-1 items-center">
                     <input type="search" placeholder="Search" className="px-4 py-2 bg-[var(--secondarycolor)] outline-none rounded-xl "  onChange={(e)=> searchPage(e)}  />
                  </div>
+                 <button onClick={()=> navigate("/fav")}>
+                    <Favorite/>
+                    <span className="text-xs">{wishData.length>0 ? (wishData.length):("")}</span>
+                 </button>
                  <button className="flex justify-center items-center " onClick={()=> navigate("/cart")}>
                     <LocalMallIcon/>
                     <span className="text-xs">{cart.length>0 ? (cart.length):("")}</span>
@@ -61,9 +68,7 @@ const Header=()=>{
                 <button onClick={()=> navigate("/signin")}><AccountCircleIcon/></button>
             </div>
         </div>
-        <div className="sm:hidden mx-4 mb-4">
-            <input type="search"  className="w-full px-4 py-2 rounded-xl bg-[var(--secondarycolor)] outline-none" placeholder="Search" onChange={(e)=> searchPage(e)}/>
-        </div>
+       
         </>
     )
 

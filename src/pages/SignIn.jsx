@@ -9,12 +9,9 @@ function SignIn() {
 
 
     const [userDetails,setUserDetails] = useState({
-      first:"",
-      last:"",
-      username:"",
       email:"",
       password:"",
-      comfirm:"",
+      
     });
 
 
@@ -28,10 +25,7 @@ function SignIn() {
     label:"Email",
     type:"email",
     placeholder:"Email",
-    required:true,
-    pattern :"^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$",
-    extra:"",
-    error:"invalid email address!"
+   
 },
   {
 
@@ -40,11 +34,7 @@ function SignIn() {
     label:"Password",
     type:"password",
     placeholder:"Password",
-    required:true,
-    extra:"(min 8 char.)",
-    error:"password should at least 8 character!",
-    pattern :"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
-   
+  
 }
   ];
 
@@ -72,7 +62,7 @@ function SignIn() {
              
 
               {inputs.map((input)=>(
-                <Input key={input.id} {...input} onchange={onchanage} value={userDetails[input.name]} align={" "}/>
+                <Input key={input.id} {...input} onchange={onchanage} value={userDetails[input.name]} />
               ))
             } 
           <div className='flex flex-col justify-center   gap-2 '>

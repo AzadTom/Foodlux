@@ -14,6 +14,8 @@ const SignUp = lazy(()=> import("./pages/SignUp"));
 const SignIn = lazy(()=> import("./pages/SignIn"));
 const Cart  = lazy(()=> import("./pages/CartPage"));
 const SearchPage = lazy(()=>import("./pages/SearchPage"));
+const Wishlist = lazy(()=> import("./pages/Wishlist"));
+
 
 
 
@@ -30,6 +32,7 @@ function App() {
       <Route path="/signin" element={<Suspense fallback={<Loading/>}><SignIn/></Suspense>}/>
       <Route path="/cart" element={<Suspense fallback={<Loading/>}><Cart/></Suspense>}/>
       <Route path="/search" element={<Suspense fallback={<Loading/>}><SearchPage/></Suspense>}/>
+      <Route path="/fav" element={<Suspense fallback={<Loading/>}><Wishlist/></Suspense>}/>
     </Routes>
     <ThemeButton/>
     </>
