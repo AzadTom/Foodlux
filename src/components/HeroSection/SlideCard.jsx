@@ -16,14 +16,14 @@ const SlideCard = ({ item ,curr ,prev,next}) => {
                 <div className="flex-1 flex flex-col text-white sm:static sm:text-[var(--primarytext)] gap-2 p-4 justify-center items-start sm:flex-col   absolute top-0 bottom-0 right-0 left-0">
                     <h3 className="text-xl font-semibold">FoodLux</h3>
                     <h2 className="text-5xl font-bold">Chicken Chopri</h2>
-                    <h3 className="text-xl font-medium text-[var(--primarytext)]  bg-green-600 p-2"> <StarIcon /> <span>5 star</span></h3>
+                    <h3 className="text-xl font-medium text-white  bg-green-600 p-2"> <StarIcon /> <span>5 star</span></h3>
                     <p className="font-thin text-sm py-2 hidden sm:block">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Consequuntur repudiandae facilis repellat quaerat voluptate doloremque.
                         Nostrum, eligendi consectetur nobis, sequi voluptates repellat sed at odio
                         cumque sunt ab veniam ipsa, itaque beatae dolorum.</p>
                 </div>
 
-                <div className='absolute bottom-4 sm:bottom-6 right-8 flex gap-4 items-center bg-green-600 px-4 py-2' >
+                <div className='absolute bottom-4 sm:bottom-6 right-8 flex gap-4 items-center bg-green-600 text-white px-4 py-2' >
                     <div className='flex gap-2 items-center'>
                         <div onClick={prev} className='cursor-pointer'>
                         <ArrowCircleLeftIcon/>

@@ -32,7 +32,7 @@ function SignUp() {
       id :1,
       name:"first",
       type:"text",
-      label:"Firstname",
+      label:"First name",
       placeholder:"First name",
      
     }
@@ -40,7 +40,7 @@ function SignUp() {
     {
       id :2,
       name:"last",
-      label:"Lastname",
+      label:"Last name",
       type:"text",
       placeholder:"Last name",
      
@@ -149,8 +149,8 @@ function SignUp() {
               ))
             } 
           <div className='flex flex-col justify-center   gap-2 '>
-          <button className='px-[20px] py-[10px] bg-black text-white rounded-md' type='submit'>Signup</button>
-            <p className='text-center cursor-pointer' onClick={()=> navigate("/signin")}>Already have an account?LogIn</p>
+          <button className='px-[20px] py-[10px] bg-black text-white rounded-md' type='submit'>Sign Up</button>
+            <p className='text-center cursor-pointer' onClick={()=> navigate("/signin")}>Already have an account? LogIn</p>
           </div>
             <div className='flex  flex-col  justify-center text-center gap-2  '>
                      <span className='text-sm text-gray-400'>OR</span>

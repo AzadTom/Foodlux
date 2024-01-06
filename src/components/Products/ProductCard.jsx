@@ -69,8 +69,8 @@ const ProductCard = ({id,name,img,category,price,add,addRemoveToFav})=>{
                    
                 </div>
 
-                {isMatch?(<button className="bg-[var(--primarytext)]  text-[var(--neutral)] px-4 py-2 rounded-md font-medium  w-full text-sm hover:scale-90 transition ease-in-out duration-300" onClick={()=> navigate("/cart")}>GoTocart</button>)
-                :(<button className="bg-[var(--primarytext)]  text-[var(--neutral)] px-4 py-2 rounded-md font-medium  w-full text-sm hover:scale-90 transition ease-in-out duration-300" onClick={()=> add()}>AddTocart</button>)}
+                {isMatch?(<button className="bg-[var(--primarytext)]  text-[var(--neutral)] px-4 py-2 rounded-md font-medium  w-full text-sm hover:scale-90 transition ease-in-out duration-300" onClick={()=> navigate("/cart")}>Go To cart</button>)
+                :(<button className="bg-[var(--primarytext)]  text-[var(--neutral)] px-4 py-2 rounded-md font-medium  w-full text-sm hover:scale-90 transition ease-in-out duration-300" onClick={()=> add()}>Add To cart</button>)}
 
             </div>
 

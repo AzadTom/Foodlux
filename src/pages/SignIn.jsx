@@ -66,8 +66,8 @@ function SignIn() {
               ))
             } 
           <div className='flex flex-col justify-center   gap-2 '>
-          <button className='px-[20px] py-[10px] bg-black text-white rounded-md'>Signin</button>
-            <p className='text-center cursor-pointer' onClick={()=> navigate("/signup")}>Don't have an account?Signup</p>
+          <button className='px-[20px] py-[10px] bg-black text-white rounded-md'>Sign In</button>
+            <p className='text-center cursor-pointer' onClick={()=> navigate("/signup")}>Don't have an account? SignUp</p>
           </div>
             <div className='flex  flex-col  justify-center text-center gap-2  '>
                      <span className='text-sm text-gray-400'>OR</span>
