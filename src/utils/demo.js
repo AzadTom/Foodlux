@@ -74,7 +74,7 @@ export const demo=[
     },
     {
       id: 13,
-      name: "Paneer Butter Masala",
+      name: "Paneer Butter ",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5kecc5mebmjSS-CrZAKaa_RUwoFa5NOuwg&usqp=CAU",
       category: "food",
       price: 240,

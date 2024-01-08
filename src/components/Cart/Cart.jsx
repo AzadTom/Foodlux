@@ -34,11 +34,10 @@ const Cart = () => {
             <table class="table-auto text-[var(--secondarytext)]">
                 <thead  className='text-[var(--primarytext)] font-semibold text-left'>
                     <tr>
-                        <th className=" px-4 py-2">Product</th>
-                        <th className=" px-4 py-2">Title</th>
-                        <th className=" px-4 py-2 hidden sm:block">Rating</th>
-                        <th className=" px-4 py-2">Price</th>
-                        <th className=" px-4 py-2 hidden sm:block">Remove</th>
+                        <th className=" px-4 py-4">Product</th>
+                        <th className=" px-4 py-4">Title</th>
+                        <th className=" px-4 py-4">Price</th>
+                        <th className=" px-4 py-4 hidden sm:block">Remove</th>
                     </tr>
                 </thead>
                 <tbody  className='text-[var(--secondarytext)]'>

@@ -63,7 +63,7 @@ const ProductCard = ({id,name,img,category,price,add,addRemoveToFav})=>{
                     
                     <div className="flex gap-2 items-center">
                     <SellIcon/>
-                    <span>{`$${price}`}</span>
+                    <span>{`Rs.${price}`}</span>
                     </div>
                   
                    

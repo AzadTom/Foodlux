@@ -20,7 +20,6 @@ const Home = ()=>{
         <Cta/>
         <Blogs/>
         <Faq/>
-        <Cta/>
         <Footer/>
        </>
       )
