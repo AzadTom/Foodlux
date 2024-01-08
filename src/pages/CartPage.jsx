@@ -14,7 +14,7 @@ const CartPage = ()=>{
 
     if (cart.length === 0) {
 
-        return (<div className='w-full text-center flex flex-col  gap-2 justify-center items-center '> <h1 className="text-3xl font-semibold">FoodCart</h1><h2>Cart is empty!</h2> <button className="px-4 py-2 bg-black text-white" onClick={()=> navigate("/")}>Continue</button></div>)
+        return (<div className='w-full h-[80vh] text-center flex flex-col  gap-2 justify-center items-center '> <h1 className="text-3xl font-semibold">FoodLux</h1><h2>Cart is empty!</h2> <button className="px-4 py-2 bg-black text-white" onClick={()=> navigate("/")}>Continue</button></div>)
     }
 
 

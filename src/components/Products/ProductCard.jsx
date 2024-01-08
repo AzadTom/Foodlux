@@ -52,7 +52,7 @@ const ProductCard = ({id,name,img,category,price,add,addRemoveToFav})=>{
                     <h2 className='sm:text-2xl font-semibold'>{name}</h2>
                    </div>
                    {/* rating */}
-                   <div className='flex  flex-row  items-center justify-center gap-1 bg-green-600 sm:text-[var(--primarytext)] p-2'>
+                   <div className='flex  flex-row  items-center justify-center gap-1 bg-green-600 text-white  p-2'>
                     <StarIcon/>
                     <span className='text-xs sm:text-sm'>5 star</span>
                    </div>
